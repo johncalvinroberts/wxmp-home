@@ -13,8 +13,8 @@ export default {
     //       require('~/content/blog/posts/' + params.slug + '.json')
     //     );
 
-    let post = await import('~/content/blog/posts/' + params.slug + '.json');
-    return post;
+    let post = await import('~/content/blog/posts/' + params.slug + '.json')
+    return post
   }
-};
+}
 </script>
