@@ -34,18 +34,10 @@ module.exports = {
   generate: {
     routes: dynamicRoutes
   },
+  plugins: ['@/plugins/prototypes'],
   /*
   ** Build configuration
   */
-  modules: [
-    '@nuxtjs/markdownit'
-  ],
-
-  // [optional] markdownit options
-  // See https://github.com/markdown-it/markdown-it
-  markdownit: {
-    injected: true
-  }, 
   build: {
     /*
     ** Run ESLint on save

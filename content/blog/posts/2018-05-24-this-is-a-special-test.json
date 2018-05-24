@@ -2,5 +2,5 @@
   "title": "This is a special test",
   "date": "2018-05-24T23:17:24+08:00",
   "thumbnail": "/images/uploads/720fe9c4b9ede0732dec.jpg",
-  "body": "Thanks.\n\n**LOVE YA!**\n\n```\nTesting the code!!\n```"
+  "body": "Thanks.\n\n**LOVE YA!**\n\n```javascript\nvar guy = nothing\n```"
 }
