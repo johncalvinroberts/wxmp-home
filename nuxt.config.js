@@ -37,6 +37,15 @@ module.exports = {
   /*
   ** Build configuration
   */
+  modules: [
+    '@nuxtjs/markdownit'
+  ],
+
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    injected: true
+  }, 
   build: {
     /*
     ** Run ESLint on save
