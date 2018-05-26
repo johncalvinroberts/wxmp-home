@@ -1,22 +1,33 @@
 <template>
-  <section class="container">
-    <h2>Blog</h2>
-    <ul>
-      <li v-for="post in posts" :key="post.date">
-        <nuxt-link :to="post._path">
-          {{ post.title }}
-        </nuxt-link>
-      </li>
-    </ul>
+  <section class="main">
+    <div class="container--center container bg-grey">
+      <app-logo/>
+      <div class="home--intro">
+        <h3>English language resources for building wechat mini programs</h3>
+      </div>
+      <div class="cards">
+        <card :link="'https://docs.wxmp.io'" :title="'Vanilla'" :linkTitle="'View docs'">
+          The official documentation from Tencent. Basics, details, everything.
+        </card>
+        <card :link="'https://wepy.wxmp.io'" :title="'Wepy'" :linkTitle="'View docs'">
+          A robust component-based framework for building mini programs.
+        </card>
+        <card :link="'https://mpvue.wxmp.io'" :title="'mpVue'" :linkTitle="'View docs'">
+          Build mini programs with Vue components. Use Vuex and all your favorite Vue tools.
+        </card>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue';
+import Card from '~/components/Card.vue';
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    Card
   },
   data() {
     // Using webpacks context to gather all files from a folder
@@ -32,34 +43,18 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style lang="scss">
+  .home--intro {
+    flex: 1;
+    min-width: 300px;
+    padding: 2em 3em;
+    h3 {
+      max-width: 500px;
+    }
+    @media screen and (max-width: 800px) {  
+      width: 100%;
+      text-align: center;
+      font-size: 0.5rem;
+    }      
+  }
 </style>

@@ -1,0 +1,102 @@
+@import 'highlight.js/styles/dracula.css';
+@import 'wingcss/dist/wing.min.css';
+@import './variables.scss';
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main {
+  background-color: $smoke;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  background-color: $smoke;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;  
+  .nav-logo {
+    cursor: pointer;
+  }
+  .nav--links {
+    display: flex;
+    padding-left: 3rem;
+    min-width: 20%;
+    justify-content: space-between;    
+  }
+  .nav-item {
+    text-decoration: none;
+    color: $turquoise;
+    position: relative;
+    padding: 0 0.3rem;
+    margin: 1rem;
+    &:before {
+      content: '';
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      opacity: 0;
+      background-color: $turquoise;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      &:before{
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .nav-logo{
+      width: 100%;
+      text-align: center;
+    }  
+    .nav--links {
+      padding-left: 0;
+      width: 100%;
+    }
+    h5 {
+      line-height: 1;
+    }
+    .nav-item {
+      line-height: 1;
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {  
+    // justify-content: center; 
+  }
+}
+
+.container {
+  min-height: 100vh;
+  padding-top: 6rem;
+}
+
+.container--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bg-grey {
+  background-color: $smoke;  
+}
+.cards {
+  display: flex;
+  width: 100%;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+  @media screen and (max-width: 500px) {  
+    justify-content: center; 
+  }  
+}
