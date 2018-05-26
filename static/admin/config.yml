@@ -13,8 +13,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Author", name: "author", widget: "relation", required: false, collection: "authors", searchFields: ["name", "twitterHandle"], valueField: "name"}
-      - {label: "Original chinese post", name: "original", widget: "string", required: false}
+      - {label: "Author", name: "author", widget: "relation", required: false, collection: "authors", searchFields: ["title", "twitterHandle"], valueField: "title"}
+      - {label: "Link to original chinese post", name: "originalPostLink", widget: "string", required: false}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "Authors"
