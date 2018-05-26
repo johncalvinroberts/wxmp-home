@@ -56,18 +56,7 @@
       }
     }
   }
-
-.fade-enter-active {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade-enter-to {
-  opacity: 1;
-}
-
-.fade-enter {
-  opacity: 0;
-}  
+   
 </style>
 <script>
 export default {

@@ -9,7 +9,7 @@
         <card :link="'https://docs.wxmp.io'" :title="'Vanilla'" :linkTitle="'View docs'">
           The official documentation from Tencent. Basics, details, everything.
         </card>
-        <card :link="'https://wepy.wxmp.io'" :title="'Wepy'" :linkTitle="'View docs'">
+        <card :link="'https://wepy.wxmp.io'" :title="'WePY'" :linkTitle="'View docs'">
           A robust component-based framework for building mini programs.
         </card>
         <card :link="'https://mpvue.wxmp.io'" :title="'mpVue'" :linkTitle="'View docs'">
@@ -38,7 +38,9 @@ export default {
       _path: `/blog/${key.replace('.json', '').replace('./', '')}`
     }))
 
-    return { posts }
+    return { 
+      posts
+    }
   }
 }
 </script>
