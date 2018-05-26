@@ -38,6 +38,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+  modules: [
+    'nuxt-imagemin',
+  ],
   build: {
     /*
     ** Run ESLint on save

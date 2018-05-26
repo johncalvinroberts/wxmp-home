@@ -1,9 +1,9 @@
 <template>
   <transition name="fade">
     <div class="wxmp-logo" v-show="loaded">
-      <img class="logo--image" src="../static/images/wxmp-phone.png" alt=""/>
+      <img class="logo--image" src="~/assets/wxmp-phone.png" alt=""/>
       <div class="logo--box">
-        <img src="../static/images/wxmp-logo.png" alt="" class="logo--logo"/>
+        <img src="~/assets/wxmp-logo.png" alt="" class="logo--logo"/>
         <div class="logo--box__inner">
           <div class="box">
             <div><span class="title">WX</span>-> <i>wēi xìn</i>, WeChat</div>
