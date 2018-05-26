@@ -1,8 +1,7 @@
 <template>
   <article class="container">
+    <h1 class="title">{{ title }}</h1>
     <div class="markdown-body">
-      <h1>{{ title }}</h1>
-      <!-- <img v-if="thumbnail" :src="thumbnail" :alt="title"> -->
       <div v-if="body" v-html="$marked(body)" class="body-1" />
     </div>
   </article>
@@ -20,8 +19,13 @@ export default {
 article {
   width: 100%!important;
 }
+.title {
+  padding: 2rem;
+  text-align: center;
+  font-size: 6rem;
+}
 .markdown-body {
-  padding: 5rem 0;
+  padding: 1rem 0 5rem;
   word-wrap: break-word;
   margin: 0 auto;
   max-width: 740px;

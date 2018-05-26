@@ -5,8 +5,8 @@
       <img src="../static/images/wxmp-logo.png" alt="" class="logo--logo"/>
       <div class="logo--box__inner">
         <div class="box">
-          <div><span class="title">WX</span>-><i>wēi xìn</i>, WeChat</div>
-          <div><span class="title">MP</span>->Mini Program</div>
+          <div><span class="title">WX</span>-> <i>wēi xìn</i>, WeChat</div>
+          <div><span class="title">MP</span>-> Mini Program</div>
         </div>
       </div>
     </div>
