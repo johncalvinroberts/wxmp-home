@@ -1,16 +1,18 @@
 <template>
-  <div class="wxmp-logo">
-    <img class="logo--image" src="../static/images/wxmp-phone.png" alt=""/>
-    <div class="logo--box">
-      <img src="../static/images/wxmp-logo.png" alt="" class="logo--logo"/>
-      <div class="logo--box__inner">
-        <div class="box">
-          <div><span class="title">WX</span>-> <i>wēi xìn</i>, WeChat</div>
-          <div><span class="title">MP</span>-> Mini Program</div>
+  <transition name="fade">
+    <div class="wxmp-logo" v-show="loaded">
+      <img class="logo--image" src="../static/images/wxmp-phone.png" alt=""/>
+      <div class="logo--box">
+        <img src="../static/images/wxmp-logo.png" alt="" class="logo--logo"/>
+        <div class="logo--box__inner">
+          <div class="box">
+            <div><span class="title">WX</span>-> <i>wēi xìn</i>, WeChat</div>
+            <div><span class="title">MP</span>-> Mini Program</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </transition>    
 </template>
 
 <style lang="scss">
@@ -47,11 +49,35 @@
       font-size: 10px;
       .box {
         margin: 0 auto;
-        width: 110px;
+        width: 122px;
       }
       .title {
         font-weight: 800;
       }
     }
   }
+
+.fade-enter-active {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-enter {
+  opacity: 0;
+}  
 </style>
+<script>
+export default {
+  data () {
+    return {
+      loaded: false
+    }
+  },
+  mounted () {
+    this.loaded = true
+  }
+}
+</script>

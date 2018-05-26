@@ -14,11 +14,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'wxmp-home',
+    title: 'wxmp | WeChat Mini Programs',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Home page for WXMP' }
+      { hid: 'description', name: 'description', content: 'English language resources and documentation for WeChat Mini Program Development' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

@@ -7,7 +7,9 @@
 
       </div>
       <div class="blog-list">
-        <article-list-item v-for="post in posts" :key="post.date" :post="post"/>
+        <transition-group name="slide-up">
+          <article-list-item v-for="post in posts" :key="post.date" :post="post"/>
+        </transition-group>
       </div>
     </div>
   </section>
@@ -41,4 +43,32 @@ export default {
 .blog-list {
   flex: 0 0 70%;
 }
+.fade-enter-active {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-enter {
+  opacity: 0;
+} 
+
+.slide-up-enter{
+  transform: translateX(-350px);
+  opacity: 0.5;
+}
+.slide-up-enter-active {
+  transition: all .3s ease;
+  transform-origin: right center;
+}
+.slide-up-leave-active {
+  transition: all 0.6s ease;
+  max-height: 300px;
+}
+.slide-up-leave-to {
+  max-height: 0px;
+  opacity: 0;
+} 
 </style>
