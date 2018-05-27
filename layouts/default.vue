@@ -5,7 +5,7 @@
       <div class="nav--links">
         <nuxt-link class="nav-item" to="/blog">blog</nuxt-link>
         <a class="nav-item" href="#">What is a Mini Program?</a>
-        <a class="nav-item" href="#">F.A.Q.</a>
+        <a class="nav-item" href="#">FAQ</a>
       </div>
     </div>    
     <nuxt/>

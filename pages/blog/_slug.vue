@@ -4,10 +4,15 @@
       <h1>{{post.title}}</h1>
       <div class="article-info--outer">
         <div class="article--author-avatar" 
-            :style="{ 'background-image': 'url(' + author.avatar + ')' }"></div>
+            :style="{ 'background-image': 'url(' + author.avatar + ')' }"
+            v-if="post.author"></div>
         <div>
-          <div class="article--author">{{author.title}}</div>
+          <div class="article--author" v-if="post.author">{{author.title}}</div>
           <div class="article--postdate">{{postDate}}</div>
+          <a class="article--original" 
+            target="_blank" 
+            v-if="post.originalPostLink"
+            :href="post.originalPostLink">Original article</a>
         </div>
       </div>
       <hr/>
@@ -48,6 +53,9 @@ article {
   }
   .article--postdate{
     opacity: 0.5;    
+  }
+  .article--original {
+    opacity: 0.8;
   }
 }
 .title {

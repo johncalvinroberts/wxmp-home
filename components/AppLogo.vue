@@ -1,18 +1,20 @@
 <template>
-  <transition name="fade">
-    <div class="wxmp-logo" v-show="loaded">
-      <img class="logo--image" src="~/assets/wxmp-phone.png" alt=""/>
-      <div class="logo--box">
-        <img src="~/assets/wxmp-logo.png" alt="" class="logo--logo"/>
-        <div class="logo--box__inner">
-          <div class="box">
-            <div><span class="logo--title">WX</span>-> <i>wēi xìn</i>, WeChat</div>
-            <div><span class="logo--title">MP</span>-> Mini Program</div>
+  <div class="wxmp-logo" >
+    <transition name="fade">
+      <div v-show="loaded">
+        <img class="logo--image" src="~/assets/wxmp-phone.png" alt=""/>
+        <div class="logo--box">
+          <img src="~/assets/wxmp-logo.png" alt="" class="logo--logo"/>
+          <div class="logo--box__inner">
+            <div class="box">
+              <div><span class="logo--title">WX</span>-> <i>wēi xìn</i>, WeChat</div>
+              <div><span class="logo--title">MP</span>-> Mini Program</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </transition>    
+    </transition>    
+  </div>
 </template>
 
 <style lang="scss">
