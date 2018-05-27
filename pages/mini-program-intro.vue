@@ -53,7 +53,8 @@
           </div>
         </div>
         <h5>Functionality</h5>
-        <p>WeChat Mini Programs offer advanced functionality to users, including but not limited to ecommerce, games, event management, content, etc. Basically anything you can do in a web app or web site, a Mini Program can do.</p>
+        <p>WeChat Mini Programs offer advanced functionality to users, including but not limited to: ecommerce, games, event management, content, etc. Basically anything you can do in a web app or web site, a Mini Program can do.
+        </p>
         <h5>Native-like User Experience</h5>
         <blockquote>Anything a web app can do? So, um, H5? Why would I choose a Mini Program over just an H5...</blockquote>
         <p>
@@ -63,7 +64,7 @@
           This speed and UX cannot be matched by a normal website being accessed inside of WeChat.
         </p>
         <h5>Development</h5>
-        <p>WeChat mini programs are created using <strong>Javascript, HTML, and CSS</strong>. This is the same technology and programming languages developers use when creating websites.
+        <p>WeChat mini programs are created using <strong>Javascript, HTML, and CSS</strong>. This is the same set of technology and programming languages developers use when creating websites.
           On top of these technologies, Tencent created a <strong>framework</strong> for building WeChat mini programs.
         </p>
         <h5>Terminology</h5>
