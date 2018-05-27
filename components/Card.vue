@@ -34,14 +34,34 @@
   right: 2rem;
   opacity: 0.8;
 }
+.card-inner.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.disabled-message {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  top: 10%;
+  width: 40%;
+  right: 10%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  z-index: 999;  
+}
 </style>
 <template>
   <div class="card">
-    <h5>{{title}}</h5>
-    <p class="card-body">
-      <slot/>
-    </p>
-    <a :href="link" target="_blank" class="card-footer center text-center"><p>View docs</p></a>
+    <span class="disabled-message" v-if="disabled">COMING SOON</span>
+    <div :class="classObject">
+      <h5>{{title}}</h5>
+      <p class="card-body">
+        <slot/>
+      </p>
+      <a :href="link" target="_blank" class="card-footer center text-center"><p>View docs</p></a>
+    </div>
   </div>
 </template>
 <script>
@@ -49,7 +69,13 @@ export default {
   props: {
     title: String,
     link: String,
-    linkTitle: String
+    linkTitle: String,
+    disabled: Boolean
+  },
+  computed: {
+    classObject () {
+      return {'card-inner': true, disabled: this.disabled}
+    }
   }
 }
 </script>

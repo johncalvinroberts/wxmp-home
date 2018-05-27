@@ -2,9 +2,9 @@
   <div class="wxmp-logo" >
     <transition name="fade">
       <div v-show="loaded">
-        <img class="logo--image" src="~/assets/wxmp-phone.png" alt=""/>
+        <img class="logo--image" src="~/assets/wxmp-phone.png" alt="wechat mini program base"/>
         <div class="logo--box">
-          <img src="~/assets/wxmp-logo.png" alt="" class="logo--logo"/>
+          <img src="~/assets/wxmp-logo.png" alt="WXMP home page logo" class="logo--logo"/>
           <div class="logo--box__inner">
             <div class="box">
               <div><span class="logo--title">WX</span>-> <i>wēi xìn</i>, WeChat</div>

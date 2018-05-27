@@ -15,11 +15,11 @@
         </div>
         <div class="faq">
           <blockquote>Do I need a VPN to access the documentation?</blockquote>
-          <p>Yes, it is recommended you use a VPN to access the documentation. Hosting in China is an incredibly massive headache that requires a business entity. This is just a not-for-profit project, no business license.</p>
+          <p>Yes, it is recommended you use a VPN to access the documentation. Hosting in China is an incredibly massive headache that requires a business entity. WXMP.io just a not-for-profit project.</p>
         </div>
         <div class="faq">
           <blockquote>Can I contribute to WXMP.io?</blockquote>
-          <p>YES! There is a huge amount of both development and translation that needs to be done, so please get in contact.</p>
+          <p>YES! There is a huge amount of both development and translation that needs to be done, so please get in contact: <a href="mailto:johnny@johnny.sh">johnny@johnny.sh</a></p>
         </div>          
         <div class="faq">
           <blockquote>Are any other languages planned for translation?</blockquote>

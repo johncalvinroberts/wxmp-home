@@ -6,13 +6,13 @@
         <h3>English language resources for building wechat mini programs</h3>
       </div>
       <div class="cards">
-        <card :link="'https://docs.wxmp.io'" :title="'Vanilla'" :linkTitle="'View docs'">
+        <card :link="'https://docs.wxmp.io'" :title="'Vanilla'" :linkTitle="'View docs'" :disabled="true">
           The official documentation from Tencent. Basics, details, everything.
         </card>
-        <card :link="'https://wepy.wxmp.io'" :title="'WePY'" :linkTitle="'View docs'">
+        <card :link="'https://wepy.wxmp.io'" :title="'WePY'" :linkTitle="'View docs'" :disabled="true">
           A robust component-based framework for building mini programs.
         </card>
-        <card :link="'https://mpvue.wxmp.io'" :title="'mpVue'" :linkTitle="'View docs'">
+        <card :link="'https://mpvue.wxmp.io'" :title="'mpVue'" :linkTitle="'View docs'" :disabled="true">
           Build mini programs with Vue components. Use Vuex and all your favorite Vue tools.
         </card>
       </div>
