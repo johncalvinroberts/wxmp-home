@@ -16,6 +16,9 @@
 .markdown-body blockquote {
   margin: 0;
 }  
+.markdown-body ul, .markdown-body ol {
+  padding-left: 0;
+}
 .markdown-body ol ol,
 .markdown-body ul ol {
   list-style-type: lower-roman;
