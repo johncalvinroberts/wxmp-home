@@ -14,8 +14,8 @@
           <p>Check our <nuxt-link to="/mini-program-intro">intro to mini programs</nuxt-link></p>
         </div>
         <div class="faq">
-          <blockquote>Do I need a VPN to access the documentation?</blockquote>
-          <p>Yes, it is recommended you use a VPN to access the documentation. Hosting in China is an incredibly massive headache that requires a business entity. WXMP.io just a not-for-profit project.</p>
+          <blockquote>Do I need a VPN to access the documentation from inside China?</blockquote>
+          <p>Yes, it is recommended you use a VPN to access the documentation if you are located inside China. Hosting in China is an incredibly massive headache that requires a business entity. WXMP.io just a not-for-profit project.</p>
         </div>
         <div class="faq">
           <blockquote>Can I contribute to WXMP.io?</blockquote>
