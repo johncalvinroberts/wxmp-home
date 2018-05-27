@@ -4,7 +4,6 @@
       <div class="blog-top">
         <h1>WXMP.io Blog</h1>
         <p>Tutorials, Guides, useful tidbits, general opinions, etc.</p>
-
       </div>
       <div class="blog-list">
         <transition-group name="slide-up">

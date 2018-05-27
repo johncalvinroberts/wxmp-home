@@ -32,6 +32,7 @@
   position: absolute;
   bottom: 1rem;
   right: 2rem;
+  opacity: 0.8;
 }
 </style>
 <template>

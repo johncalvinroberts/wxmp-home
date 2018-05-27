@@ -4,8 +4,8 @@
       <h5 class="nav-logo" @click="navToHome">WXMP.io</h5>
       <div class="nav--links">
         <nuxt-link class="nav-item" to="/blog">blog</nuxt-link>
-        <a class="nav-item" href="#">What is a Mini Program?</a>
-        <a class="nav-item" href="#">FAQ</a>
+        <nuxt-link class="nav-item" to="/mini-program-intro">What is a Mini Program?</nuxt-link>
+        <nuxt-link class="nav-item" to="/frequently-asked-questions">FAQ</nuxt-link>
       </div>
     </div>    
     <nuxt/>

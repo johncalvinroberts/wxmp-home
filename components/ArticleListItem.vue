@@ -34,7 +34,7 @@
       font-size: 1rem;    
     }
     .article--thumbnail {
-      width: 20%;
+      width: 10rem;
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
