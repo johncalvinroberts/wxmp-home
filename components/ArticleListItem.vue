@@ -53,9 +53,6 @@ export default {
   props: {
     post: Object
   },
-  mounted () {
-    console.log(this.post.thumbnail)
-  },
   computed: {
     postDate () {
       const date = new Date(this.post.date)

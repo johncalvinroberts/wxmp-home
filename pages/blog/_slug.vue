@@ -1,8 +1,17 @@
 <template>
   <article class="container">
-    <h1 class="title">{{ title }}</h1>
     <div class="markdown-body">
-      <div v-if="body" v-html="$marked(body)" class="body-1" />
+      <h1>{{post.title}}</h1>
+      <div class="article-info--outer">
+        <div class="article--author-avatar" 
+            :style="{ 'background-image': 'url(' + author.avatar + ')' }"></div>
+        <div>
+          <div class="article--author">{{author.title}}</div>
+          <div class="article--postdate">{{postDate}}</div>
+        </div>
+      </div>
+      <hr/>
+      <div v-if="post.body" v-html="$marked(post.body)" class="body-1" />
     </div>
   </article>
 </template>
@@ -10,14 +19,36 @@
 <script>
 export default {
   async asyncData({ params }) {
-    let post = await import('~/content/blog/posts/' + params.slug + '.json')
-    return post
+    const post = await import(`~/content/blog/posts/${params.slug}.json`)
+    const authorSlug = post.author ? post.author.toLowerCase().split(' ').join('-') : null
+    const author = authorSlug ? await import(`~/content/authors/author-${authorSlug}.json`) : ''
+    const postDate = new Date(post.date).toDateString()
+    return {post, author, postDate}
   }
 }
 </script>
 <style lang="scss">
+@import '../../assets/styles/variables.scss';
 article {
   width: 100%!important;
+}
+.article-info--outer {
+  display: flex;
+  justify-content: flex-start;
+  .article--author{
+    opacity: 0.5;
+  }
+  .article--author-avatar {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;    
+    background-color: $smoke;
+    background-size: cover; 
+    margin-right: 2rem;   
+  }
+  .article--postdate{
+    opacity: 0.5;    
+  }
 }
 .title {
   padding: 2rem;

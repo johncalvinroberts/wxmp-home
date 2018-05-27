@@ -23,7 +23,7 @@ export default {
   },
   data() {
     // Using webpacks context to gather all files from a folder
-    const context = require.context('~/content/blog/posts/', false, /\.json$/);
+    const context = require.context('~/content/blog/posts/', false, /\.json$/)
 
     const posts = context.keys().map(key => ({
       ...context(key),
@@ -42,8 +42,5 @@ export default {
 }
 .blog-list {
   flex: 0 0 70%;
-}
-.fade-enter-active {
-  transition: opacity 0.5s ease-in-out;
 }
 </style>
