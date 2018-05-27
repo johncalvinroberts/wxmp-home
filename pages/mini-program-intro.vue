@@ -45,7 +45,7 @@
         <h5>Native-like User Experience</h5>
         <blockquote>Anything a web app can do? So, um, H5? Why would I choose a Mini Program over just an h5...</blockquote>
         <p>
-          When Mini Programs were first released in 2017, skeptics often poked at the new technology as being no improvement from traditional h5 WeChat pages. There are, however, several things that distinguish Mini Programs from so called <em>h5</em>. So-called <em>h5</em> is just a web app.
+          When Mini Programs were first released in 2017, skeptics often poked at the new technology as being no improvement from traditional h5 WeChat pages. There are, however, several things that distinguish Mini Programs from h5. So-called <em>h5</em> is just a web app.
           In other words, a normal website.
           
           Mini Programs, however, are a hybrid of a website and a native app. Part native, part web app. This creates a <em>Fast</em>, <em>Native-like</em> user experience right inside of WeChat. 
