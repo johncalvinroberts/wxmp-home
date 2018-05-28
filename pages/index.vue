@@ -13,7 +13,7 @@
           A robust component-based framework for building mini programs.
         </card>
         <card :link="'https://mpvue.wxmp.io'" :title="'mpVue'" :linkTitle="'View docs'" :disabled="true">
-          Build mini programs with Vue components. Use Vuex and all your favorite Vue tools.
+          Build mini programs with Vue components, vuex, and all your favorite Vue tools.
         </card>
       </div>
     </div>

@@ -42,12 +42,13 @@
   position: absolute;
   width: 100%;
   opacity: 1;
-  top: 10%;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.7rem;
   width: 40%;
-  right: 10%;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  color: #fff;
   padding: 2px;
   z-index: 999;  
 }
